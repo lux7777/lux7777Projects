@@ -6,3 +6,13 @@ Section 4: DOM Projects
 
 Project: 1_Task_List
 
+I made some modifications:
+  - if(taskInput.value === '') {
+      alert('Add a task'); 
+      return false;              // return false disabled setting empty task
+    }
+  
+  - let tasks = [];
+    if(localStorage.getItem('tasks') !== null){
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
